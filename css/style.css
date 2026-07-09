@@ -67,10 +67,14 @@ nav {
 }
 
 .nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+
   max-width: 1050px;
   margin: 0 auto;
   padding: 12px 20px;
-  text-align: center;
 }
 
 nav a {
