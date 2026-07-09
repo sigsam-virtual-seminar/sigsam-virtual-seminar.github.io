@@ -1,0 +1,229 @@
+:root {
+  --primary: #17365d;
+  --secondary: #285985;
+  --background: #f5f7fa;
+  --text: #222222;
+  --muted: #5f6670;
+  --border: #d9dee5;
+  --white: #ffffff;
+  --link: #155fa0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* 顶部标题区域 */
+
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 55px 20px 45px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  letter-spacing: 0.02em;
+}
+
+header p {
+  max-width: 800px;
+  margin: 15px auto 0;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+/* 导航栏 */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--secondary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+.nav-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin: 4px 15px;
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 页面主体 */
+
+main {
+  max-width: 1000px;
+  min-height: 520px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 28px;
+  padding: 30px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  margin-top: 0;
+  padding-bottom: 8px;
+  color: var(--primary);
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--border);
+}
+
+h3,
+h4 {
+  color: var(--primary);
+}
+
+/* 报告信息 */
+
+.talk-card {
+  margin-top: 20px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.talk-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.speaker {
+  margin-bottom: 2px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.institution,
+.time,
+.location {
+  color: var(--muted);
+}
+
+.abstract,
+.biography {
+  margin-top: 20px;
+}
+
+/* 提示框 */
+
+.notice {
+  padding: 18px;
+  background: #eef5fb;
+  border-left: 5px solid var(--secondary);
+  border-radius: 3px;
+}
+
+/* 按钮 */
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 9px 16px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--secondary);
+}
+
+/* 组织者列表 */
+
+.organizer-list {
+  padding-left: 22px;
+}
+
+.organizer-list li {
+  margin-bottom: 18px;
+}
+
+/* 页脚 */
+
+footer {
+  margin-top: 45px;
+  padding: 28px 20px;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: var(--white);
+}
+
+/* 移动端 */
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header {
+    padding: 40px 20px 32px;
+  }
+
+  nav {
+    position: static;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px;
+  }
+
+  section {
+    padding: 22px;
+  }
+}
