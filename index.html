@@ -1,0 +1,392 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="The official website of the SIGSAM Virtual Seminar."
+  >
+
+  <title>SIGSAM Virtual Seminar</title>
+
+  <style>
+    :root {
+      --primary: #17365d;
+      --secondary: #285985;
+      --background: #f5f7fa;
+      --text: #222222;
+      --muted: #5f6670;
+      --border: #d9dee5;
+      --white: #ffffff;
+      --link: #155fa0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 55px 20px 45px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 15px auto 0;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--secondary);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+    }
+
+    nav .nav-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 4px 15px;
+      color: var(--white);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 28px;
+      padding: 30px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: var(--primary);
+    }
+
+    .notice {
+      padding: 18px;
+      background: #eef5fb;
+      border-left: 5px solid var(--secondary);
+      border-radius: 3px;
+    }
+
+    .talk {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .talk:first-of-type {
+      padding-top: 5px;
+    }
+
+    .talk:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .talk-title {
+      margin-bottom: 5px;
+      color: var(--primary);
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .speaker {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .institution,
+    .time,
+    .location {
+      color: var(--muted);
+    }
+
+    .abstract {
+      margin-top: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 8px;
+      padding: 9px 16px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 4px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: var(--secondary);
+    }
+
+    .organizer-list {
+      columns: 2;
+      padding-left: 22px;
+    }
+
+    footer {
+      margin-top: 45px;
+      padding: 28px 20px;
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--white);
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        position: static;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px;
+      }
+
+      section {
+        padding: 22px;
+      }
+
+      .organizer-list {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>SIGSAM Virtual Seminar</h1>
+
+    <p>
+      An international online seminar in symbolic computation,
+      computer algebra, and related areas
+    </p>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#about">About</a>
+      <a href="#upcoming">Upcoming Talks</a>
+      <a href="#past">Past Talks</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About the Seminar</h2>
+
+      <p>
+        The SIGSAM Virtual Seminar promotes communication within the
+        international symbolic computation community through regular
+        online talks featuring both established and emerging researchers.
+      </p>
+
+      <p>
+        The seminar is organized by ACM SIGSAM. Talks are scheduled at
+        times convenient for different regions, including Asia, Europe,
+        and the Americas.
+      </p>
+
+      <div class="notice">
+        The first seminar is expected to take place in October 2026.
+        Further information will be announced on this page.
+      </div>
+    </section>
+
+    <section id="upcoming">
+      <h2>Upcoming Talks</h2>
+
+      <article class="talk">
+        <div class="talk-title">
+          Title of the Upcoming Talk
+        </div>
+
+        <div class="speaker">
+          Speaker Name
+        </div>
+
+        <div class="institution">
+          Speaker's Institution
+        </div>
+
+        <div class="time">
+          Date and time to be announced
+        </div>
+
+        <div class="location">
+          Online
+        </div>
+
+        <div class="abstract">
+          <h3>Abstract</h3>
+
+          <p>
+            The abstract of the talk will appear here.
+          </p>
+        </div>
+
+        <!--
+        报名信息确定后，可以使用下面的按钮。
+        将 # 替换成真实的注册链接。
+        -->
+
+        <!--
+        <a class="button" href="#">
+          Register
+        </a>
+        -->
+      </article>
+    </section>
+
+    <section id="past">
+      <h2>Past Talks</h2>
+
+      <p>
+        Information about previous talks, slides, and recordings will
+        be listed here.
+      </p>
+
+      <!-- 示例：
+
+      <article class="talk">
+        <div class="talk-title">
+          Title of a Previous Talk
+        </div>
+
+        <div class="speaker">
+          Speaker Name
+        </div>
+
+        <div class="institution">
+          Speaker's Institution
+        </div>
+
+        <div class="time">
+          March 20, 2027
+        </div>
+
+        <p>
+          <a href="files/slides.pdf">Slides</a>
+          |
+          <a href="https://example.com">Video</a>
+        </p>
+      </article>
+
+      -->
+    </section>
+
+    <section id="organizers">
+      <h2>Organizers</h2>
+
+      <ul class="organizer-list">
+        <li>Organizer One, Institution</li>
+        <li>Organizer Two, Institution</li>
+        <li>Organizer Three, Institution</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        Questions and suggestions concerning the seminar are welcome.
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:seminar@example.org">
+          seminar@example.org
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 SIGSAM Virtual Seminar
+    </p>
+  </footer>
+
+</body>
+</html>
+```
