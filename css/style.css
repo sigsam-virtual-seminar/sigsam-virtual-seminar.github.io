@@ -146,6 +146,16 @@ h4 {
 
 /* 报告信息 */
 
+.registration-notice {
+  margin: 0 0 18px;
+}
+
+.talk-separator {
+  margin: 0 0 24px;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
 .talk-card {
   margin-top: 20px;
   padding: 22px;
@@ -155,14 +165,68 @@ h4 {
 
 .talk-card h3 {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 1.3rem;
 }
 
-.speaker {
-  margin-bottom: 2px;
-  font-size: 1.05rem;
+.talk-card .talk-label {
+  margin-right: 0.4em;
+  color: var(--muted);
+  font-size: inherit;
   font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.speaker {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.speaker-name {
+  font-weight: 700;
+}
+
+.speaker-affiliation {
+  color: var(--muted);
+  font-size: 0.875em;
+}
+
+.talk-detail {
+  margin: 2px 0;
+  font-size: 1.05rem;
+}
+
+.talk-abstract-heading {
+  margin: 24px 0 8px;
+  font-size: 1em;
+  line-height: 1.3;
+}
+
+.upcoming-talk-card > h3,
+.upcoming-talk-card > .speaker,
+.upcoming-talk-card > .talk-detail,
+.upcoming-talk-card > .talk-abstract-heading {
+  margin: 0 0 12px;
+}
+
+.upcoming-talk-card {
+  margin-top: 0;
+}
+
+.upcoming-talk-card + .upcoming-talk-card {
+  margin-top: 24px;
+}
+
+.talk-card .abstract {
+  margin-top: 0;
+}
+
+.talk-card .abstract p {
+  margin: 0 0 1em;
+}
+
+.talk-card .abstract p:last-child {
+  margin-bottom: 0;
 }
 
 .institution,
