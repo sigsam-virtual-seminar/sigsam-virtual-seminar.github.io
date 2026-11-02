@@ -196,6 +196,21 @@ h4 {
   font-size: 1.05rem;
 }
 
+.talk-recording {
+  margin-bottom: 12px;
+}
+
+.talk-recording video {
+  display: block;
+  margin-top: 8px;
+  border-radius: 4px;
+  background: #000000;
+}
+
+.recording-link {
+  margin: 8px 0 0;
+}
+
 .talk-abstract-heading {
   margin: 24px 0 8px;
   font-size: 1em;
